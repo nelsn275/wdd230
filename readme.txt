@@ -1,1 +1,1 @@
-This file has been read
+This file has been read. Thank you for reading
