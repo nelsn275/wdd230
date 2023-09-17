@@ -1,0 +1,68 @@
+/* General Body CSS */
+body{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+/* Header CSS */
+
+header{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: rgb(111, 171, 106);
+}
+header h1{
+    padding-top: 20px;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 2.5em;
+    color: white;
+}
+#portrait{
+    width: 200px;
+    margin-left: 70px;
+}
+
+/* Nav CSS */
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(0, 0, 34);
+}
+nav a{
+    text-decoration: none;
+    font-size: larger;
+    line-height: 2.5em;
+    color: white;
+}
+
+
+/* Main CSS */
+main h2{
+    margin-top: 30px;
+}
+main hr{
+    width: 70%;
+}
+.card h3{
+    background-color: rgb(111, 171, 106);
+    font-size: larger;
+    line-height: 2.5em;
+}
+.card ul li{
+    list-style: none;
+    text-align: left;
+}
+
+
+/* Footer CSS */
+footer{
+    background-color: rgb(111, 171, 106);
+    margin-bottom: -16px;
+}
