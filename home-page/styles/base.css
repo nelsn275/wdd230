@@ -55,9 +55,13 @@ main hr{
     font-size: larger;
     line-height: 2.5em;
 }
-.card ul li{
-    list-style: none;
+.card ol li{
     text-align: left;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+.card ol li a{
+    margin-left: 1rem;
 }
 
 
