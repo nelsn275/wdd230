@@ -1,6 +1,6 @@
 /* General Body CSS */
 body{
-    width: 50%;
+    max-width: 640px;
     margin: auto;
     text-align: center;
     border: 3px solid;
@@ -22,7 +22,7 @@ header h1{
     margin-left: 40px;
     text-align: left;
     font-size: 2.5em;
-    color: rgb(255, 255, 255);
+    color: black;
 }
 #portrait{
     width: 200px;
