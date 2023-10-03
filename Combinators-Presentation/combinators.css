@@ -67,14 +67,13 @@ h2{
     margin-right: 30px;
 }
 
-#adjacent + p{
+#adjacent section + p{
     background-color: rgb(69, 141, 157);
     color: black;
     line-height: 2em;
 
 
     grid-column: 1/2;
-    margin-right: 30px;
 }
 
 /* General Sibling Selector CSS */
@@ -86,6 +85,7 @@ h2{
     grid-column: 2/3;
     grid-row: 5/6;
     margin-left: 30px;
+    line-height: 2em;
 }
 #general section ~ p{
     background-color: rgb(69, 141, 157);
