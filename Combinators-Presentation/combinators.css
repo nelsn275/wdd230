@@ -27,10 +27,12 @@ h2{
     line-height: 2em;
     grid-column: 1/2;
 }
+
 #descendant p{
     background-color: rgb(69, 141, 157);
     color: black;
 }
+
 #descendant p div{
     background-color: aquamarine;
 }
@@ -41,11 +43,13 @@ h2{
 #child{
     background-color: black;
     color: white;
+
+
+
     line-height:2em;
-
-
     margin-left: 30px;
 }
+
 #child > p{
     background-color:rgb(69, 141, 157);
     color: black;
@@ -56,6 +60,9 @@ h2{
     grid-row: 4/5;
     margin-top: 50px;
 }
+
+
+
 /* Adjacent Sibling Selector CSS */
 #adjacent{
     background-color: black;
@@ -70,11 +77,14 @@ h2{
 #adjacent section + p{
     background-color: rgb(69, 141, 157);
     color: black;
+
+
+    
     line-height: 2em;
-
-
     grid-column: 1/2;
 }
+
+
 
 /* General Sibling Selector CSS */
 #general{
@@ -87,6 +97,7 @@ h2{
     margin-left: 30px;
     line-height: 2em;
 }
+
 #general section ~ p{
     background-color: rgb(69, 141, 157);
     color: black;
