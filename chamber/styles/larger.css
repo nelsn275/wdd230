@@ -5,11 +5,20 @@
     nav .icon{
         display: none;
     }
+    nav #big-nav{
+        display: flex;
+        justify-content: right;
+        line-height: 2em;
+    }
+    nav #big-nav a{
+        width: 50px;
+    }
 
     #home-main #temp-div{
         display: flex;
         max-width: 100%;
         justify-content: left;
     }
+
     
 }

@@ -8,24 +8,28 @@ nav {
     background-color: #333;
     position: relative;
     max-width: 640px;
-  }
+}
   
 nav #links {
     display: none;
-  }
-  
+}
+
 nav a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
+}
   
 nav a.icon {
     background: black;
     max-width: 640px;
-  }
+}
+
+nav #big-nav{
+    display: none;
+}
   
   
 
