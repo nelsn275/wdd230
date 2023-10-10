@@ -1,4 +1,4 @@
-document.querySelector("last-modified").innerHTML = document.lastModified;
+document.getElementById("last-modified").innerHTML = document.lastModified;
 
 // Hamburger Menu
 function makeHamburger() {
