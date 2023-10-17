@@ -1,4 +1,3 @@
-/* HOME PAGE */
 
 /* Root */
   
@@ -36,14 +35,16 @@ nav a.icon {
 nav #big-nav{
     display: none;
 }
+    /* HOME PAGE */
+
   
   /* Main */
 #home-main{
     background-color: var(--background-color);
 }
 #home-main #dark-mode{
-    color: var(--hover-text);
-    background-color: var(--hover-background);
+    color: var(--background-color);
+    background-color: var(--text-color);
     position: absolute;
     top: 30px;
     right: 30px;
@@ -51,6 +52,17 @@ nav #big-nav{
 #home-main #hero-holder{
     text-align: center;
     position: relative;
+}
+#home-main #join{
+    color: var(--hover-text);
+    background-color: var(--hover-background);
+    position: absolute;
+    bottom: 200px;
+    right: 43%;
+    width: 100px;
+    height: 2em;
+
+
 }
 
 #home-main #current-events, #weather-card, #spotlight-1, #spotlight-2, #spotlight-3{
