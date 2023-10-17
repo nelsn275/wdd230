@@ -1,8 +1,14 @@
 /* HOME PAGE */
 
-/* Main CSS */
+/* Root */
   
-  
+:root{
+    --text-color: black;
+    --background-color: #b7b7a4;
+    --hover-background: #6b705c;
+    --hover-text: #ffe8d6;
+}
+  /* Nav */
 nav {
     overflow: hidden;
     background-color: #333;
@@ -31,7 +37,21 @@ nav #big-nav{
     display: none;
 }
   
-  
+  /* Main */
+#home-main{
+    background-color: var(--background-color);
+}
+#home-main #dark-mode{
+    color: var(--hover-text);
+    background-color: var(--hover-background);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+#home-main #hero-holder{
+    text-align: center;
+    position: relative;
+}
 
 #home-main #current-events, #weather-card, #spotlight-1, #spotlight-2, #spotlight-3{
     width: 200px;
@@ -47,7 +67,12 @@ nav #big-nav{
     justify-content: center;
     max-width: 640px;
 }
+#home-main #hero{
+    max-width: 80%;
+    height: 600px;
+}
 
+/* Footer */
 footer{
     border: 1px solid black
 }

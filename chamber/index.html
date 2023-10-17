@@ -20,6 +20,7 @@
     <link rel="stylesheet"      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="shortcut icon"   href="images/favicon.ico">
+    <script src="scripts/script.js" defer></script>
 
     <title>Cornelius Chamber of Commerce</title>
     <!-- https://placehold.co/widthxheight -->
@@ -48,7 +49,11 @@
     </header>
 
     <main id="home-main">
-        <img src="https://placehold.co/700x400" alt="Hero-img">
+        <div id="hero-holder">
+            <button type="button" id="dark-mode">DARK</button>
+            <img id='hero' src="https://placehold.co/1000x400" alt="Hero-img">
+
+        </div>
 
         <button type="button" id="join">Join Now</button>
 
@@ -83,6 +88,5 @@
         <p>Nicholas Nelson | WDD230 Chamber of Commerce Project | Last Modified: <span id="last-modified"> </span></p>
     </footer>
 
-    <script src="scripts/script.js"></script>
 </body>
 </html>
