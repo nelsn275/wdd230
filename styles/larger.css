@@ -63,6 +63,13 @@
     picture img{
         width: 300px;
     }
+    picture p{
+        position: absolute;
+        top: 20px;
+        right: 170px;
+        color: grey;
+        background-color: white;
+    }
 
 
 

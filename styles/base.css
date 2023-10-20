@@ -134,8 +134,18 @@ main hr{
 iframe{
     width: 100%;
 }
+picture{
+    position: relative;
+}
 picture img{
     width: 200px;
+}
+picture p{
+    position: absolute;
+    top: 40px;
+    right: 280px;
+    color: grey;
+    background-color: white;
 }
 
 /* Footer CSS */
