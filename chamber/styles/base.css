@@ -58,10 +58,10 @@ nav #big-nav{
     background-color: var(--hover-background);
     position: absolute;
     bottom: 200px;
-    right: 43%;
+    right: 41%;
     width: 100px;
     height: 2em;
-
+    border-radius: 8px;
 
 }
 
