@@ -57,7 +57,7 @@ nav #big-nav{
     color: var(--hover-text);
     background-color: var(--hover-background);
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
     right: 41%;
     width: 100px;
     height: 2em;
@@ -79,9 +79,10 @@ nav #big-nav{
     justify-content: center;
     max-width: 640px;
 }
-#home-main #hero{
-    max-width: 80%;
-    height: 600px;
+#home-main img{
+    margin-top: 5px;
+    max-width: 95%;
+
 }
 
 /* Footer */

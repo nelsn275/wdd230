@@ -51,7 +51,11 @@
     <main id="home-main">
         <div id="hero-holder">
             <button type="button" id="dark-mode">DARK</button>
-            <img id='hero' src="https://placehold.co/1000x400" alt="Hero-img">
+            <picture id="hero">
+                <source srcset="images/fernhill-small.webp" media="(max-width: 680px)">
+                <source srcset="images/fernhill-med.webp" media="(max-width: 980px)"> 
+                <img src="images/fernhill.webp" alt="Hero Img">
+            </picture>
             <button type="button" id="join">Join Now</button>
         </div>
 
