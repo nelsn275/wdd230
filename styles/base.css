@@ -63,7 +63,6 @@ nav{
 	list-style: none;
 	margin: 0 auto;
 	max-width: 760px;
-    grid-column: 0;
 }
 
 .navigation li {
