@@ -143,8 +143,8 @@ picture img{
     position: absolute;
     top: 40px;
     right: 280px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color:white;
 }
 
 /* Footer CSS */
