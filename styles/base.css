@@ -133,18 +133,18 @@ main hr{
 iframe{
     width: 100%;
 }
-picture{
+#temple-holder{
     position: relative;
 }
 picture img{
     width: 200px;
 }
-picture div{
+#temple-holder p{
     position: absolute;
     top: 40px;
     right: 280px;
-    color: grey;
-    background-color: white;
+    color: white;
+    background-color: black;
 }
 
 /* Footer CSS */

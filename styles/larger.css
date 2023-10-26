@@ -57,13 +57,13 @@
         margin: auto;
         width: 70%;
     }
-    picture{
+    #temple-holder{
         grid-column:2/3;
     }
     picture img{
         width: 300px;
     }
-    picture div{
+    #temple-holder p{
         position: absolute;
         top: 20px;
         right: 170px;
