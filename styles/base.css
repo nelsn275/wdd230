@@ -139,7 +139,7 @@ picture{
 picture img{
     width: 200px;
 }
-picture p{
+picture div{
     position: absolute;
     top: 40px;
     right: 280px;
