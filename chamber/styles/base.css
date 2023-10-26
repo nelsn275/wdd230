@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
 
 /* Root */
   
@@ -6,6 +7,8 @@
     --background-color: #b7b7a4;
     --hover-background: #6b705c;
     --hover-text: #ffe8d6;
+    --heading-font: 'Lora';
+    --body-font: 'Open Sans';
 }
   /* Nav */
 nav {
@@ -52,6 +55,14 @@ nav #big-nav{
 #home-main #hero-holder{
     text-align: center;
     position: relative;
+}
+#hero-holder h1{
+    position: absolute;
+    font-family: var(--heading-font);
+    font-size: 3em;
+    top: 100px;
+    left: 370px;
+    width: 700px;
 }
 #home-main #join{
     color: var(--hover-text);
