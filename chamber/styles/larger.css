@@ -28,6 +28,34 @@
         bottom: 100px;
         right: 45%;
     }
+    /* Discover */
+    #discover-main{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        text-align: center;
+        justify-items: center;
+    }
+    #discover-main #sidebar{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    #discover-main #picture-container{
+        text-align: center;
+        border-left: solid black;
+        width: 80%;
+        margin-top: 10px;
+    }
+    #discover-main #picture-container img{
+        height: 600px;
+        width: 800px;
+        margin-top: 10px;
+    }
+    #discover-main #picture-container img:hover{
+        width: 825px;
+        height: 625px;
+        transition: .5s;
+    }
+
 
     
 }

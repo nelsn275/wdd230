@@ -10,6 +10,9 @@
     --heading-font: 'Lora';
     --body-font: 'Open Sans';
 }
+body{
+    background-color: var(--background-color);
+}
   /* Nav */
 nav {
     overflow: hidden;
@@ -37,6 +40,11 @@ nav a.icon {
 
 nav #big-nav{
     display: none;
+}
+nav #big-nav img{
+    width: 100px;
+    position: absolute;
+    left: 0px;
 }
     /* HOME PAGE */
 
@@ -96,6 +104,35 @@ nav #big-nav{
 
 }
 
+/* Discover Main */
+#discover-main #dark-mode{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+#discover-main #sidebar hr{
+    border: solid black;
+    border-width: 1px;
+    width: 90%
+}
+#discover-main #sidebar #welcome-message{
+    border: solid black;
+    margin-bottom: 30px;
+}
+#discover-main #sidebar #stats{
+    border: solid black;
+    margin-bottom: 30px;
+}
+#discover-main #sidebar #events{
+    border: solid black;
+    margin-bottom: 30px;
+}
+#discover-main #sidebar #calander{
+    border: solid black;
+
+}
 /* Footer */
 footer{
     border: 1px solid black

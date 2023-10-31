@@ -30,25 +30,36 @@ darkButton.addEventListener('click', ()=>{
 
 })
 
-// Windchill
-function showWindchill(temp, speed){
-  const windchillSpan = document.getElementById('windchill')
 
-  let message = "N/A"
+// Welcome Message
 
-  if (temp <= 50 && speed > 3){
+const LAST_VISIT_DATE_KEY = 'last-visit'
+const DAY_IN_MILLIS = 24 * 60 * 60 * 1000
 
-    let chillFactor = Math.pow(speed, 0.16)
-    let chill = 35.74 + (0.6215 * temp) - (35.75 * chillFactor) + (0.4275 * temp * chillFactor)
+function displayWelcome() {
+  let message = 'Welcome! Let us know if you have any questions'
+  let lastVisitValue = localStorage.getItem(LAST_VISIT_DATE_KEY)
 
-    message = `${Math.round(chill)}`
+  let today = new Date()
+  if (lastVisitValue != null){
+
+    lastVisit = parseInt(LAST_VISIT_DATE_KEY)
+    daysSinceLastVisit = Math.floor((today - lastVisit) / DAY_IN_MILLIS)
+
+    if (daysSinceLastVisit == 0){
+      message = 'Back so soon? Awesome!'
+
+    }
+    else{
+      if(daysSinceLastVisit == 1){
+        message = 'You last visited 1 day ago'
+      }
+      else{
+        mesage = `You last visited ${daysSinceLastVisit} days ago`
+      }
+    }
   }
-
-  windchillSpan.textContent = message
+  localStorage.setItem(LAST_VISIT_DATE_KEY, `${today.getTime()}`)
+  return message;
 }
-const tempSpan = document.getElementById("temperature")
-const windspeedSpan = document.getElementById("windspeed")
-const temperature = parseInt(tempSpan.textContent)
-const windspeed = parseInt(windspeedSpan.textContent)
-
-showWindchill(temperature, windspeed)
+document.querySelector("#welcome-message").textContent = displayWelcome()
