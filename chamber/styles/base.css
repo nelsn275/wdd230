@@ -5,7 +5,7 @@
 :root{
     --text-color: black;
     --background-color: #b7b7a4;
-    --hover-background: #6b705c;
+    --hover-background: #464B3F;
     --hover-text: #ffe8d6;
     --heading-font: 'Lora';
     --body-font: 'Open Sans';
@@ -112,8 +112,11 @@ nav #big-nav img{
     top: 70px;
     right: 30px;
 }
+#discover-main #sidebar{
+    color: var(--text-color);
+}
 #discover-main #sidebar hr{
-    border: solid black;
+    border: 1px solid var(--text-color);
     border-width: 1px;
     width: 90%
 }
