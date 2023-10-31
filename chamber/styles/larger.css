@@ -11,7 +11,7 @@
         justify-content: right;
         line-height: 2em;
     }
-    nav #big-nav a{
+    nav #big-nav #big-links a{
         width: 50px;
     }
         /* Home Page */
@@ -55,7 +55,7 @@
         height: 625px;
         transition: .5s;
     }
-
-
-    
+    #discover-main #picture-container img:not( :hover){
+        transition: .5s;
+    }
 }

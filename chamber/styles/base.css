@@ -25,7 +25,7 @@ nav #links {
     display: none;
 }
 
-nav a {
+nav a{
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -41,7 +41,8 @@ nav a.icon {
 nav #big-nav{
     display: none;
 }
-nav #big-nav img{
+nav #big-nav #nav-img{
+    z-index: 2;
     width: 100px;
     position: absolute;
     left: 0px;
@@ -70,7 +71,7 @@ nav #big-nav img{
     font-size: 3em;
     top: 100px;
     left: 370px;
-    width: 700px;
+    max-width: 700px;
 }
 #home-main #join{
     color: var(--hover-text);
