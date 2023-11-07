@@ -53,7 +53,7 @@
         <form>
             <label>First Name <input id="input" name="firstName" type="text" required></label>
             <label>Last Name <input id="input" name="lastName" type="text" required></label>
-            <label>Title <input id="input" name="title" type="text" required></label>
+            <label>Title <input id="input" name="title" type="text" required pattern="[A-Za-z\s\-]{7,}"></label>
             <label>Email <input id="input" name="email" type="email" required placeholder="example@email.com" title="Please enter a valid Email Address"></label>
             <label>Phone <input id="input" name="phone" type= "tel" required></label>
             <label>Business Name <input id="input" name="business" type="text" required></label>
@@ -65,7 +65,8 @@
                 <label>Gold <input type="radio" name="level" value="gold"></label>
             </div>
             <h3>Business Description</h3>
-            <input id="description" type="text">
+            <!-- <input id="input" type="text" cols="40"> -->
+            <label><textarea name="description" id="description" cols="40" rows="5"></textarea></label>
             <div id="button-holder">
                 <button id="join">JOIN THE CHAMBER</button>
             </div>
