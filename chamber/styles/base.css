@@ -41,11 +41,12 @@ nav a.icon {
 nav #big-nav{
     display: none;
 }
-nav #big-nav #nav-img{
-    z-index: 2;
+nav #big-nav img{
     width: 100px;
     position: absolute;
     left: 0px;
+    top: 0px;
+
 }
     /* HOME PAGE */
 
@@ -137,6 +138,64 @@ nav #big-nav #nav-img{
     border: solid black;
 
 }
+/* Join CSS */
+#join-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+form{
+    text-align: left;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 2em;
+    margin-left: 3em;
+}
+input{
+    display: block;
+    padding:.5rem;
+    font-size: 1.1rem;
+    width: 20rem;
+}
+#description{
+    height: 4em;
+    margin-left: 1em;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+#join-main #button-holder{
+    text-align: center;
+}
+label{
+    display: block;
+    margin: .5rem;
+    margin-left: 2em;
+    margin-top: 1.5em
+}
+button{
+    font-size: 1.5rem;
+    color: white;
+    background-color: darkblue;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+input:valid{
+    box-shadow: 3px 3px 3px black;
+}
+input:invalid{
+    box-shadow: 3px 3px 3px red;
+}
+#info{
+    border: 1px solid black;
+    border-radius: 2em;
+    margin: 20px;
+}
+#info ul, h3{
+    margin-left: 2em;
+}
+#info h2{
+    text-align: center;
+}
+
 /* Footer */
 footer{
     border: 1px solid black

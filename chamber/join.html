@@ -49,47 +49,56 @@
 
     </header>
 
-    <main id="home-main">
-        <div id="hero-holder">
-            <button type="button" id="dark-mode">DARK</button>
-            <picture id="hero">
-                <h1>Welcome to the Cornelius Chamber of Commerce</h1>
-                <source srcset="images/fernhill-small.webp" media="(max-width: 680px)">
-                <source srcset="images/fernhill-med.webp" media="(max-width: 980px)"> 
-                <img src="images/fernhill.webp" alt="Hero Img">
-            </picture>
-            <button type="button" id="join">Join Now</button>
-        </div>
-
-
-        <div id="temp-div">
-            <div id="current-events">
-                <h2>Current Events</h2>
-                <hr>
+    <main id="join-main">
+        <form>
+            <label>First Name <input id="firstName" name="firstName" type="text" required></label>
+            <label>Last Name <input id="lastName" name="lastName" type="text" required></label>
+            <label>Title <input id="title" name="title" type="text" required></label>
+            <label>Email <input id="email" name="email" type="email" required placeholder="example@email.com" title="Please enter a valid Email Address"></label>
+            <label>Phone <input id="phone" name="phone" type= "tel" required></label>
+            <label>Business Name <input id="business" name="business" type="text" required></label>
+            <div id="levels">
+                <h3>Membership levels</h3>
+                <label>NP <input id="value" name="level"  type="radio"></label>
+                <label>Bronze <input type="radio" name="level" value="bronze"></label>
+                <label>Silver <input type="radio" name="level" value="silver"></label>
+                <label>Gold <input type="radio" name="level" value="gold"></label>
             </div>
-
-            <div id="weather-card">
-                <h2>Weather</h2>
-                <hr>
-                <h2><span id="temperature">40</span></h2>
-                <h3>Wind Speed: <span id="windspeed">10</span></h3>
-                <h3>Wind Chill: <span id="windchill"></span></h3>
+            <h3>Business Description</h3>
+            <input id="description" type="text">
+            <div id="button-holder">
+                <button id="join">JOIN THE CHAMBER</button>
             </div>
+        </form>
 
-            <div id="spotlight-1">
-                <h2>Spotlight 1</h2>
-                <hr>
-            </div>
-
-            <div id="spotlight-2">
-                <h2>Spotlight 2</h2>
-                <hr>
-            </div>
-
-            <div id="spotlight-3">
-                <h2>Spotlight 3</h2>
-                <hr>
-            </div>
+        <div id="info">
+            <h2>Membership Level Benifits</h2>
+            <h3>NP Membership</h3>
+            <ul>
+                <li>For non profit organizations there is no fee</li>
+            </ul>
+            <h3>Bronze Membership</h3>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+            <h3>Silver Membership</h3>
+            <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+            <h3>Gold Membership</h3>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+            </ul>
         </div>
     </main>
     <footer id="footer">
