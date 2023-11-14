@@ -280,7 +280,8 @@ input:invalid{
 }
 
 .directory-list section:nth-child(even) {
-    background-color: var(--hover-background-color)
+    background-color: var(--hover-background);
+    color: rgb(193, 193, 193);
 }
 
 /* Footer */
