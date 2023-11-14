@@ -195,6 +195,11 @@ input:invalid{
 #info h2{
     text-align: center;
 }
+/* Thank-You CSS */
+#thank-you-main{
+    text-align: center;
+
+}
 /* Directory */
 .directory-main{
     width: 100%;
@@ -289,5 +294,6 @@ input:invalid{
 
 /* Footer */
 footer{
+    text-align: center;
     border: 1px solid black
 }
