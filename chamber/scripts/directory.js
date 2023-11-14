@@ -31,8 +31,8 @@ const displayMembers = (businesss) => {
     card.innerHTML = `
     <img src="${business.imageURL}">
     <p>${business.name}</p>
-    <p>${business.streetAddress}</p>
-    <p>${business.cityStateZip}</p>
+    <p>${business.phone}</p>
+    <p>${business.address}</p>
     <p><a class="card-button" href="${business.websiteURL}">Website</a></p>
     `;
     if (business.membershipLevel=='gold'){

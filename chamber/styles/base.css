@@ -214,7 +214,7 @@ input:invalid{
 }
 
 #directory-selector button.active{
-    background-color: var(--hover-background-color);
+    background-color: var(--hover-background);
 }
 
 .directory-cards img{
@@ -230,24 +230,23 @@ input:invalid{
     text-align: center;    
     border: 2px solid grey;    
     width: 300px;
-    background-color: var(--menu-bg-color);
     padding: 1rem;
     margin: .5rem;
 }
 
 .directory-cards section{
-    box-shadow: .5rem .5rem .5rem var(--hover-background-color);
+    box-shadow: .5rem .5rem .5rem var(--hover-background);
 }
 
 
 .directory-cards .gold-member{
-    box-shadow: .5rem .5rem .5rem gold;
+    box-shadow: .5rem .5rem .5rem rgb(222, 176, 60);
 }
 
 .directory-cards .card-button{
     text-decoration: none;
     color: white;
-    background-color: var(--hover-background-color);
+    background-color: var(--hover-background);
     padding: .5rem;
     border-radius: 5px;
 }
