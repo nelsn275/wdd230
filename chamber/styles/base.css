@@ -283,6 +283,9 @@ input:invalid{
     background-color: var(--hover-background);
     color: rgb(193, 193, 193);
 }
+.directory-list section:nth-child(even) a{
+    color: rgb(193, 193, 193);
+}
 
 /* Footer */
 footer{
