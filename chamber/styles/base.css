@@ -5,6 +5,7 @@
 :root{
     --text-color: black;
     --background-color: #b7b7a4;
+    --lighter-background: #a5a591;
     --hover-background: #464B3F;
     --hover-text: #ffe8d6;
     --heading-font: 'Lora';
@@ -214,7 +215,7 @@ input:invalid{
     padding: 1rem;
     margin: .5rem;
     border-radius: 5px;
-    background-color: var(--body-bg-color);
+    background-color: var(--background-color);
     border: 1px black solid;
 }
 
@@ -279,9 +280,14 @@ input:invalid{
     color: black;    
 }
 
-
+.directory-list section:first-child{
+    border-radius: 10px 10px 0 0;
+}
+.directory-list section:last-child{
+    border-radius: 0 0 10px 10px;
+}
 .directory-list section:nth-child(odd) {
-    background-color: var(--background-color);
+    background-color: var(--lighter-background);
 }
 
 .directory-list section:nth-child(even) {
