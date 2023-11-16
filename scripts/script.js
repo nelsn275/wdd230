@@ -51,5 +51,26 @@ confirm.addEventListener('blur', ()=>{
     }
 })
 
+// Weather API
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=43.830043&lon=-111.8293825&appid=1b59a46c43a6de2f4168e7eb719320eb&units=imperial'
+
+function displayWeather(data){
+    icon = data.weather[0].icon
+    description = data.weather[0].description
+    temp = data.main.temp.toFixed(0)
+}
+
+async function getWeather(){
+    const response = await fetch(url)
+    if (response.ok){
+        const data = await response.json()
+        displayWeather(data)
+    }
+    else{
+        console.log('Error getting Weather Data')
+    }
+}
+getWeather()
 
 

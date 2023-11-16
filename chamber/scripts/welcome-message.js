@@ -22,7 +22,6 @@ function displayWelcome() {
       }
     }
   }
-  console.log(daysSinceLastVisit)
   localStorage.setItem(LAST_VISIT_DATE_KEY, `${today.getTime()}`)
   return message;
 }
