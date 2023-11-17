@@ -122,13 +122,6 @@ main hr{
 .card ol li a{
     margin-left: 1rem;
 }
-#pseudo::after {
-    content: '🌦️';
-}
-
-#pseudo::before{
-    content: '🌦️';
-}
 
 iframe{
     width: 100%;

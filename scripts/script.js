@@ -32,33 +32,18 @@ function getSiteVisits(){
 
 document.getElementById('visitcount').textContent = `${getSiteVisits()}`
 
-// Site Rating
-const rating = document.getElementById("rating")
-rating.addEventListener('change', () => {
-    document.getElementById("currentrating").innerHTML = rating.value;
-})
-
-// Password Match
-const confirm = document.getElementById("confirm")
-confirm.addEventListener('blur', ()=>{
-    const password= document.getElementById("password")
-    if (password.value != confirm.value){
-        document.getElementById("message").innerHTML="Passwords do not match!"
-        password.focus()    
-    }
-    else{
-        document.getElementById("message").innerHTML=""
-    }
-})
-
 // Weather API
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=43.830043&lon=-111.8293825&appid=1b59a46c43a6de2f4168e7eb719320eb&units=imperial'
 
 function displayWeather(data){
-    icon = data.weather[0].icon
-    description = data.weather[0].description
-    temp = data.main.temp.toFixed(0)
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+    let description = data.weather[0].description
+    let temp = data.main.temp.toFixed(0)
+    let weather = document.getElementById("weather")
+    weather.textContent = `${temp}°F - ${description}`
+    let weatherIcon = document.getElementById("weather-icon");
+    weatherIcon.setAttribute('src', iconsrc);
 }
 
 async function getWeather(){
