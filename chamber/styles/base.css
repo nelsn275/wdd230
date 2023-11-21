@@ -86,7 +86,14 @@ nav #big-nav img{
     border-radius: 8px;
 
 }
-
+#home-main #banner{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(174, 97, 97);
+    line-height: 2em;
+    font-family: var(--heading-font);
+    margin-top: 0;
+}
 #home-main #current-events, #weather-card, #spotlight-1, #spotlight-2, #spotlight-3{
     width: 200px;
     border: 1px solid gray;
