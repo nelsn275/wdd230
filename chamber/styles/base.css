@@ -50,7 +50,9 @@ nav #big-nav img{
 
 }
     /* HOME PAGE */
-
+.current{
+    background-color: grey;
+}
   
   /* Main */
 #home-main{
@@ -60,7 +62,7 @@ nav #big-nav img{
     color: var(--background-color);
     background-color: var(--text-color);
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 30px;
 }
 #home-main #hero-holder{
@@ -70,19 +72,17 @@ nav #big-nav img{
 #hero-holder h1{
     position: absolute;
     font-family: var(--heading-font);
-    font-size: 3em;
-    top: 100px;
-    left: 370px;
     max-width: 700px;
+    font-size: 30px;
 }
 #home-main #join{
     color: var(--hover-text);
     background-color: var(--hover-background);
     position: absolute;
-    bottom: 100px;
+    bottom: 10px;
     right: 41%;
     width: 100px;
-    height: 2em;
+    height: 3em;
     border-radius: 8px;
 
 }
@@ -94,24 +94,43 @@ nav #big-nav img{
     font-family: var(--heading-font);
     margin-top: 0;
 }
-#home-main #current-events, #weather-card, #spotlight-1, #spotlight-2, #spotlight-3{
-    width: 200px;
+#home-main #current-events, #weather-card, .spotlight{
+    width: 450px;
     border: 1px solid gray;
     height: 300px;
     margin-left: 10px;
     text-align: center;
     margin-bottom: 10px;
 }
+#home-main .spotlight p{
+    font-family: var(--body-font);
+    font-size: 1.2em;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.gold{
+    background-color: rgb(197, 171, 24);
+    line-height: 2em;
+}
+#home-main #current-events li{
+    font-size: 1.2em;
+    font-family: var(--body-font);
+    margin-bottom: 20px;
+    text-align: left;
+}
 #home-main #temp-div{
     display: grid;
-    grid-template-columns: auto auto ;
-    justify-content: center;
-    max-width: 640px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    width: 100%;
 }
 #home-main img{
     margin-top: 5px;
     max-width: 100%;
-
+}
+#home-main #x{
+    margin-left:2em;
+    border: 1px solid black;
+    padding: 1px 5px 1px 5px;
 }
 
 /* Discover Main */
@@ -142,9 +161,14 @@ nav #big-nav img{
     border: solid black;
     margin-bottom: 30px;
 }
+#discover-main #sidebar li{
+    text-align: left;
+}
 #discover-main #sidebar #calander{
     border: solid black;
-
+}
+#discover-main #sidebar #calander img{
+    width: 300px
 }
 /* Join CSS */
 #join-main{
@@ -253,7 +277,7 @@ input:invalid{
 
 
 .directory-cards .gold-member{
-    box-shadow: .5rem .5rem .5rem rgb(222, 176, 60);
+    box-shadow: .5rem .5rem .5rem rgb(197, 171, 24);
 }
 
 .directory-cards .card-button{

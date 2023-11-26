@@ -1,9 +1,20 @@
 let banner = document.getElementById('banner')
+let x = document.getElementById('x')
 
 let now = new Date()
-today = now.getDay()
+let today = now.getDay()
 
-if (today != 1 && today != 2 && today != 3){
+function removeBanner() {
     banner.style.display = 'none'
 }
+
+if (today != 1 && today != 2 && today != 3){
+    removeBanner()
+}
+
+x.addEventListener('click', () => {
+    removeBanner()
+})
+
+
 

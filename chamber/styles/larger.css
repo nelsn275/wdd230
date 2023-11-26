@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 980px) {
     /* Nav */
     nav{
         max-width: 100%;
@@ -17,16 +17,20 @@
         /* Home Page */
 
     /* Main */
-    #home-main #temp-div{
-        display: flex;
-        max-width: 100%;
-        justify-content: left;
-    }
     #home-main #join{
         width: 150px;
         height: 3em;
         bottom: 100px;
         right: 45%;
+    }
+    #home-main h1{
+        font-size: 3em;
+        top: 10%;
+        left: 30%;
+    }
+    #home-main #dark-mode{
+        top: 30px;
+        right: 30px;
     }
     /* Discover */
     #discover-main{

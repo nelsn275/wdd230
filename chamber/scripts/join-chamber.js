@@ -1,5 +1,4 @@
 let joinButton = document.getElementById('join')
-console.log(window.location.href)
 
 joinButton.addEventListener('click',  ()=>{
     if (window.location.href == 'https://nelsn275.github.io/wdd230/chamber/index.html' ){

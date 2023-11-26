@@ -21,10 +21,11 @@
 
     <link rel="shortcut icon"   href="images/favicon.ico">
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/show-windchill.js" defer></script>
+    <!-- <script src="scripts/show-windchill.js" defer></script> -->
     <script src="scripts/dark-mode.js" defer></script>
     <script src="scripts/join-chamber.js" defer></script>
     <script src="scripts/show-banner.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
 
     <title>Cornelius Chamber of Commerce</title>
     <!-- https://placehold.co/widthxheight -->
@@ -64,35 +65,57 @@
             <button type="button" id="join">Join Now</button>
         </div>
 
-        <p id="banner">Join us for a community meet and great  Wednesday @7:00 PM</p>
+        <p id="banner">Join us for a community meet and great  Wednesday @7:00 PM <span id="x">X</span></p>
 
         <div id="temp-div">
+
+
+            <div class='spotlight'>
+                <h2>Great NW</h2>
+                <hr>
+                <p class="gold">GOLD MEMBER</p>
+                <p>Come visit the Great NW over by Fred Meyer! We have great ice cream and homemade waffle cones! You don't want to miss out</p>
+            </div>
+
+            <div class="spotlight">
+                <h2>Coastal Farm and Ranch</h2>
+                <hr>
+                <p class="gold">GOLD MEMBER</p>
+                <p>If you have any farming equipement you need Coastal is the place to go! Also has a variety of outdoor wear and camping equipment. Can be found on the North side of TV Baseline</p>
+            </div>
+
+            <div class="spotlight">
+                <h2>City of Cornelius</h2>
+                <hr>
+                <p class="gold">GOLD MEMEBER</p>
+                <p>Big thanks to the City of Cornelius for being one of longest running members of 15 years! They were instrumental in putting together last months meet and greet!</p>
+            </div>
+
             <div id="current-events">
                 <h2>Current Events</h2>
                 <hr>
+                <ul>
+                    <li>
+                        Apr 21 5PM: Community Meet and Greet at Fletcher Park
+                    </li>
+                    <li>
+                        Dec 12 & 13: 30% off Holiday special at Food Trucks
+                    </li>
+                    <li>
+                        Jan 14: Animal man at the Library
+                    </li>
+                </ul>
             </div>
 
             <div id="weather-card">
                 <h2>Weather</h2>
                 <hr>
-                <h2><span id="temperature">40</span></h2>
-                <h3>Wind Speed: <span id="windspeed">10</span></h3>
-                <h3>Wind Chill: <span id="windchill"></span></h3>
-            </div>
-
-            <div id="spotlight-1">
-                <h2>Spotlight 1</h2>
+                <h3>Current Temp:<span id="current-temp"></span></h3>
                 <hr>
-            </div>
-
-            <div id="spotlight-2">
-                <h2>Spotlight 2</h2>
-                <hr>
-            </div>
-
-            <div id="spotlight-3">
-                <h2>Spotlight 3</h2>
-                <hr>
+                <h3>3 Day Forecast</h3>
+                <h3 id="dates"></h3>
+                <h3>Highs: <span id="highs"></span></h3>
+                <h3>Lows: <span id="lows"></span></h3>
             </div>
         </div>
     </main>
