@@ -51,7 +51,7 @@
     }
     #discover-main #picture-container img{
         height: 600px;
-        width: 800px;
+        max-width: 800px;
         margin-top: 10px;
     }
     #discover-main #picture-container img:hover{

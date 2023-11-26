@@ -13,4 +13,7 @@
         top: -60px;
         right: 0px;
     }
+    #discover-main #picture-containter img{
+        width: 400px;
+    }
 }

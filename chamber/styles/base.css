@@ -134,6 +134,16 @@ nav #big-nav img{
 }
 
 /* Discover Main */
+#discover-main{
+    max-width: 640px;
+    text-align: center;
+}
+#discover-main #welcome-message{
+    font-size: 2em;
+}
+#discover-main img{
+    max-width: 640px;
+}
 #discover-main #dark-mode{
     color: var(--background-color);
     background-color: var(--text-color);
