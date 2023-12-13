@@ -1,0 +1,15 @@
+@media (min-width: 1120px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+    
+    .menu li {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
