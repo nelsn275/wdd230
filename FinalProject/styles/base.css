@@ -184,11 +184,6 @@ body{
     grid-template-columns: 1fr;
     justify-items: center;
 }
-#about-main img{
-    width: 500px;
-    margin-left: -50px;
-    margin-top: -10px;
-}
 
 #about-main iframe{
     width: 80%;
@@ -264,4 +259,8 @@ footer ul{
     line-height: 1em;
     list-style-type: none;
     margin-top: 2.4em;
+}
+footer #congrats{
+    margin-top: 20px;
+    margin-left: 100px;
 }

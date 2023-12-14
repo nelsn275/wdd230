@@ -69,3 +69,12 @@ savebutton.addEventListener('click', ()=>{
 })
 
 getfruitdata();
+
+// Add 1 to the drink counter
+document.getElementById('flavors').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const currentCounter = localStorage.getItem('drinkCounter') || 0;
+    const newCounter = parseInt(currentCounter, 10) + 1;
+    localStorage.setItem('drinkCounter', newCounter);
+})
