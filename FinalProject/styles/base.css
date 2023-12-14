@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
 :root {
     --text-color: black;
     --hover-color: rgb(178, 42, 42);
@@ -55,23 +56,24 @@ body{
 }
 #hero-holder h1{
     position: absolute;
+    font-family: 'Rethink+Sans';
     top: 20%;
     left: 37%;
     background-color: rgb(222, 179, 41);
-    width: 8em;
-    font-size: 3em;
-    line-height: 2.5em;
-    border-radius: 50%;
+    width: 5em;
+    font-size: 2em;
+    line-height: 2em;
 
 }
 #hero-holder #order{
     background-color: rgb(73, 134, 203);
-    line-height: 2em;
-    font-size: 2em;
+    font-family: 'Rethink+Sans';
+    line-height: 1em;
+    font-size: 1.5em;
     border-radius: 5%;
     position: absolute;
-    top: 37%;
-    left: 44.5%;
+    top: 60%;
+    left: 37%;
 }
 #hero-holder #order:hover{
     cursor:pointer;
@@ -79,6 +81,13 @@ body{
 #home-main #under-hero{
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+#home-main #under-hero #area-description{
+    font-family: 'Rethink+Sans';
+    width: 90%;
+    margin-left: 20px;
+    line-height: 1.5em;
+    font-size: 1.3em;
 }
 #home-main #under-hero #weather-info{
     display: grid;
@@ -96,22 +105,17 @@ body{
 /* Order CSS */
 #order-main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 #order-main #step3{
     background-color: var(--background-color);
     line-height: 2em;
     width: 60%;
-    grid-column: 1/3;
+    /* grid-column: 1/3; */
     margin-left: 20%;
     border-radius: 50%;
 }
-
-#order-main h1{
-    grid-column: 1/3;
-}
 #order-main #info{
-    grid-column: 1/2;
     text-align: left;
     margin: 20px;
     border-radius: 2em;
@@ -141,7 +145,6 @@ body{
     margin-top: 1.5em
 }
 #flavors {
-    grid-column: 2/3;
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
@@ -152,7 +155,7 @@ body{
 }
 
 #flavors label {
-    display: block;
+    display: block; 
     margin-bottom: 8px;
 }
 
@@ -178,11 +181,8 @@ body{
 /* About us CSS */
 #about-main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;
-}
-#about-main h1{
-    grid-column: 1/3;
 }
 #about-main img{
     width: 500px;
@@ -191,7 +191,6 @@ body{
 }
 
 #about-main iframe{
-    grid-column: 1/3;
     width: 80%;
     margin: 10px;
 }
