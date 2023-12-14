@@ -12,22 +12,69 @@
     <meta property="og:description"         content="Nicholas Nelson WDD 230 - Web Frontend Development Final Project">
     <meta property="og:image"               content="images/logos/main-logo.jpeg">
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet"      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"      href="styles/base.css">
+    <link rel="stylesheet"      href="styles/larger.css">
+
+    <script src="scripts/weather-today.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/order-page.js" defer></script>
 
     <title>Bountiful Foods | Home</title>
 
 </head>
-<body>
+<nav>
     <div class="navbar">
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="current-page"><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </div>
+</nav>
+
+<body>
+    <main id="home-main">
+        <div id="hero-holder">
+            <img id="hero" src="images/hero.png" alt="Picture of fruit and smoothies">
+            <h1>Bountiful Foods</h1>
+            <button id="order">Order Now!</button>
+        </div>
+        <div id="under-hero">
+            <div id="area-description">
+
+            </div>
+            <div id="weather-info">
+
+                <div>
+                    <h2>Current Weather</h2>
+                    <hr>
+                    <div id="current-weather"></div>
+                    <img id="weather-icon" src="" alt="weather-icon">
+                </div>
+
+                <div id="future-weather">
+                    <h2>Forecast</h2>
+                    <hr>
+                    <div id="day1"></div>
+                    <div id="day2"></div>
+                    <div id="day3"></div>
+                </div>
+
+            </div>
+        </div>
+    </main>
 </body>
+<footer>
+    <img src="images/logo/logo-png.png" alt="Logo">
+    <h4>Sources used: </h4>
+    <ul>
+        <li>fruityvice.com</li>
+        <li>openweathermap.org</li>
+        <li>All images are AI generated using canva.com</li>
+    </ul>
+</footer>
 </html>

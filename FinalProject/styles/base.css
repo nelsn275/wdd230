@@ -5,14 +5,8 @@
     --hover-background-color: rgb(253, 148, 165);
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .navbar {
     background-color: var(--background-color);
-    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,12 +24,245 @@ body {
     display: none;
 }
 
-.menu li {
+.menu li{
     margin-right: 20px;
+    line-height: 3em;
+    width: 5em;
+}
+.menu li:hover{
+    background-color: var(--hover-color);
 }
 
 .menu a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
+}
+.current-page{
+    background-color: var(--hover-background-color);
+}
+/* Home CSS */
+body{
+    text-align: center;
+}
+#hero{
+    width: 80%;
+
+}
+#hero-holder{
+    text-align: center;
+    position: relative;
+}
+#hero-holder h1{
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    background-color: rgb(222, 179, 41);
+    width: 8em;
+    font-size: 3em;
+    line-height: 2.5em;
+    border-radius: 50%;
+
+}
+#hero-holder #order{
+    background-color: rgb(73, 134, 203);
+    line-height: 2em;
+    font-size: 2em;
+    border-radius: 5%;
+    position: absolute;
+    top: 37%;
+    left: 44.5%;
+}
+#hero-holder #order:hover{
+    cursor:pointer;
+}
+#home-main #under-hero{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#home-main #under-hero #weather-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#home-main #under-hero #weather-info hr{
+    width: 90%;
+    margin-top: -20px;
+}
+#home-main #under-hero #weather-icon{
+    width: 35px;
+}
+
+
+/* Order CSS */
+#order-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#order-main #step3{
+    background-color: var(--background-color);
+    line-height: 2em;
+    width: 60%;
+    grid-column: 1/3;
+    margin-left: 20%;
+    border-radius: 50%;
+}
+
+#order-main h1{
+    grid-column: 1/3;
+}
+#order-main #info{
+    grid-column: 1/2;
+    text-align: left;
+    margin: 20px;
+    border-radius: 2em;
+    margin-left: 3em;
+    background-color: var(--background-color);
+    padding: 5px;
+}
+#order-main #info .input{
+    display: block;
+    padding:.5rem;
+    font-size: 1.1rem;
+    width: 20rem;
+}
+#order-main #info #description{
+    height: 4em;
+    margin-left: 1em;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+#order-main #info #order-main #button-holder{
+    text-align: center;
+}
+#order-main #info label{
+    display: block;
+    margin: .5rem;
+    margin-left: 2em;
+    margin-top: 1.5em
+}
+#flavors {
+    grid-column: 2/3;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
+}
+
+#flavors label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#flavors select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#flavors input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* About us CSS */
+#about-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+#about-main h1{
+    grid-column: 1/3;
+}
+#about-main img{
+    width: 500px;
+    margin-left: -50px;
+    margin-top: -10px;
+}
+
+#about-main iframe{
+    grid-column: 1/3;
+    width: 80%;
+    margin: 10px;
+}
+#about-main #info{
+    width: 80%;
+    line-height: 2em;
+    font-size: 1.3em;
+    border: 1px solid black;
+    border-radius: 20%;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Confirm */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #order-details {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #order-details h2 {
+    color: #333;
+  }
+  
+  #order-details p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  #pickup-time {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Footer CSS */
+footer{
+    background-color: var(--background-color);
+    display: flex;
+    line-height: 5em;
+}
+footer img{
+    width: 100px;
+    margin: 10px;
+    margin-right: 50px;
+}
+footer ul{
+    line-height: 1em;
+    list-style-type: none;
+    margin-top: 2.4em;
 }

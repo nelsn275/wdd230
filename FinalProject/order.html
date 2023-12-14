@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/hamburger-menu.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"      content="IE=edge">
+        <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+        <meta name="description"                content="Nicholas Nelson WDD 230 - Web Frontend Development Final Project">
+        <meta name="author"                     content="Nicholas Nelson">
+        <meta property="og:url"                 content="https://nelsn275.github.io/wdd230/finalproject/index.html">
+        <meta property="og:type"                content="Website">
+        <meta property="og:title"               content="Nicholas Nelson - WDD 230 - Web Frontend Development">
+        <meta property="og:description"         content="Nicholas Nelson WDD 230 - Web Frontend Development Final Project">
+        <meta property="og:image"               content="images/logos/main-logo.jpeg">
+
+        <link rel="icon" href="images/favicon.ico">
+    
+        <link rel="stylesheet"      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet"      href="styles/base.css">
+        <link rel="stylesheet"      href="styles/larger.css">
+
+        <script src="scripts/make-smoothie.js" defer></script>
+        <script src="scripts/hamburger-menu.js" defer></script>
+    
+        <title>Bountiful Foods | Home</title>
+    
+    </head>
+
 <body>
     <nav>
-        <button id="nav-button" class></button>
-        <ul id="nav-menu" class>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="order.html" class="currentPage">Order</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
+        <div class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="current-page"><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
     </nav>
+    <main id="order-main">
+        <h1>Order a drink in 3 easy steps!</h1>
+        <div>
+            <h2>1. Fill out your information</h2>
+            <form id="info">
+                <label>First Name   <input class="input" name="firstName"  type="text" required></label>
+                <label>Last Name    <input class="input" name="lastName"   type="text" required></label>
+                <label>Email        <input class="input" name="email"      type="email"required placeholder="example@email.com" title="Please enter a valid Email Address"></label>
+                <label>Phone        <input class="input" name="phone"      type= "tel" required></label>
+            </form>
+        </div>
+        <div>
+            <h2>2. Select your flavors!</h2>
+            <form id="flavors" action="confirm.html">
+                <select name="fruit1" id="fruit1" required></select>
+                <select name="fruit2" id="fruit2" required></select>
+                <select name="fruit3" id="fruit3" required></select>
+                <br>
+                <textarea id="extraDirections" name="extraDirections" rows="4" cols="45" placeholder="Add any special instructions or requests here!"></textarea>
+
+                <input id="savebutton" type="submit" value="Create Your Drink!">
+            </form>
+        </div>
+        <h2 id="step3">3. Pay when you get your drink</h2>
+</main>
+<footer>
+    <img src="images/logo/logo-png.png" alt="Logo">
+    <h4>Sources used: </h4>
+    <ul>
+        <li>fruityvice.com</li>
+        <li>openweathermap.org</li>
+        <li>All images are AI generated using canva.com</li>
+    </ul>
+</footer>
     
 </body>
 </html>
