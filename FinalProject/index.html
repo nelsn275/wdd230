@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"      content="IE=edge">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta name="description"                content="Nicholas Nelson WDD 230 - Web Frontend Development Final Project">
+    <meta name="author"                     content="Nicholas Nelson">
+    <meta property="og:url"                 content="https://nelsn275.github.io/wdd230/finalproject/index.html">
+    <meta property="og:type"                content="Website">
+    <meta property="og:title"               content="Nicholas Nelson - WDD 230 - Web Frontend Development">
+    <meta property="og:description"         content="Nicholas Nelson WDD 230 - Web Frontend Development Final Project">
+    <meta property="og:image"               content="images/logos/main-logo.jpeg">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet"      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"      href="styles/base.css">
+    <link rel="stylesheet"      href="styles/larger.css">
+
+    <script src="scripts/weather-today.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/order-page.js" defer></script>
+    <script src="scripts/drinkcounter.js" defer></script>
+
+    <title>Bountiful Foods | Home</title>
+
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="menu">
+                <li class="current-page"><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="home-main">
+        <div id="hero-holder">
+            <img id="hero" src="images/hero.png" alt="Picture of fruit and smoothies">
+            <h1>Bountiful Foods</h1>
+            <button id="order">Order Now!</button>
+        </div>
+        <div id="under-hero">
+            <div id="area-description">
+                <h2>About California</h2>
+                The Southern California coast is part of the western coastline of the United States and spans from Point Conception in the north to the United States-Mexico border in the south. The region generally experiences a Mediterranean climate characterized by mild, wet winters and warm, dry summers. Southern Califonia also has some great beaches! Popular ones include Venice Beach, Santa Monica Beach, Huntington Beach, and Malibu.
+            </div>
+            <div id="weather-info">
+
+                <div>
+                    <h2>Current Weather</h2>
+                    <hr>
+                    <div id="current-weather"></div>
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d.png" alt="weather-icon">
+                </div>
+
+                <div id="future-weather">
+                    <h2>Forecast</h2>
+                    <hr>
+                    <div id="day1"></div>
+                    <div id="day2"></div>
+                    <div id="day3"></div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="images/logo/logo-png.png" alt="Logo">
+        <h4>Sources used: </h4>
+        <ul>
+            <li>fruityvice.com</li>
+            <li>openweathermap.org</li>
+            <li>All images are AI generated using canva.com</li>
+        </ul>
+
+        <div id="congrats">Congratulations! You have ordered <span id="counterDisplay"></span> drinks with us</div>
+    </footer>
+</body>
+
+</html>

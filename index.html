@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"      content="IE=edge">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta name="description"                content="Nicholas Nelson WDD 230 - Web Frontend Development course assignment portal">
+    <meta name="author"                     content="Nicholas Nelson">
+    <meta property="og:url"                 content="https://nelsn275.github.io/wdd230/index.html">
+    <meta property="og:type"                content="Website">
+    <meta property="og:title"               content="Nicholas Nelson - WDD 230 - Web Frontend Development">
+    <meta property="og:description"         content="Nicholas Nelson WDD 230 - Web Frontend Development course assignment portal">
+    <meta property="og:image"               content="images/dolphin-boogeyboard.JPG">
+
+    <script src="scripts/script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <link rel="stylesheet"      href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <title>Nicholas Nelson - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header>
+        <img id="portrait" src="images/dolphin-boogeyboard.JPG" alt="dolphin boogeyboard">
+        <h1>Nicholas Nelson</h1>
+    </header>
+
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a target= "_blank" href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/19?lang=eng&id=p18">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div></div>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ol>
+                <li>
+                    <a href="https://nelsn275.github.io/wdd230/lesson01/holygrail.html" target="_blank">Holy Grail Assignment</a>
+                </li>
+                <li>
+                    <a href="https://nelsn275.github.io/wdd230/lesson02/design.html" target="_blank">Design Assignment</a>
+                </li>
+                <li>
+                    <a href="#"> </a>
+                </li>
+                <li>
+                    <a href="#"> </a>
+                </li>
+                <li>
+                    <a href="#"> </a>
+                </li>
+                <li>
+                    <a href="#"> </a>
+                </li>
+                <li>
+                    <a href="#"> </a>
+                </li>
+                <li>
+                    <a href="#"> </a>
+                </li>
+                <li>
+                    <a href="lesson09/new-ward-members.json">New Ward Members (JSON)</a>
+                </li>
+                <li>
+                    <a href="#"> </a>
+                </li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h3>Information</h3>
+            <p>Rexburg, Idaho</p>
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/01d.png" alt="clear sky">           
+            <p id="pseudo"><span id="weather"></span></p>
+            <p>Visit Count: <span id="visitcount"> </span> </p>
+
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.85270966544!2d-111.82946841555592!3d43.830104938331516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1695765045176!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="temple-holder">
+            <picture>
+                <source srcset="images/temple-small.webp" media= "(max-width: 640px)">
+                <img src="images/temple-large.webp" alt="Temple Photo">
+            </picture>
+            <p>Portland Temple</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> </p>
+        <p>Nicholas Nelson </p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+
+</body>
+</html>

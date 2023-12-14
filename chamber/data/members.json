@@ -1,0 +1,61 @@
+{
+    "members": [
+        {
+            "name": "City of Cornelius",
+            "address": "123 Main Street, Cornelius, OR 97113",
+            "phone": "503-123-1234",
+            "websiteURL": "https://www.cornelius.org",
+            "imageURL": "images/city.jpeg",
+            "membershipLevel": "gold"
+        },
+        {
+            "name": "Cornelius Library",
+            "address": "540 Main Street, Cornelius, OR 97113",
+            "phone": "208-123-1234",
+            "websiteURL": "https://www.wccls.org/libraries/cornelius",
+            "imageURL": "images/library.jpeg",
+            "membershipLevel": "gold"
+        },
+        {
+            "name": "Great NW",
+            "address": "443 1st Ave Corelius, OR 97113",
+            "phone": "971-293-2846",
+            "websiteURL": "https://www.facebook.com/gnwcompany/",
+            "imageURL": "images/greatNW.jpeg",
+            "membershipLevel": "gold"
+        },
+        {
+            "name": "Coastal Farm and Ranch",
+            "address": "3865 Baseline Rd. Cornelius, OR 97113",
+            "phone": "971-737-3944",
+            "websiteURL": "https://www.coastalcountry.com/about/store-locations/cornelius",
+            "imageURL": "images/coastal.jpeg",
+            "membershipLevel": "gold"
+        },
+        {
+            "name": "Zesti Food Carts",
+            "address": "2131 Yew St, Forest Grove, OR 97116",
+            "phone": "503-384-6978",
+            "websiteURL": "https://www.zesticarts.com/",
+            "imageURL": "images/food_carts.jpeg",
+            "membershipLevel": "silver"
+        },
+        {
+            "name": "McMenamins Grand Lodge",
+            "address": "3505 Pacific Ave, Forest Grove, OR 97116",
+            "phone": "503-466-3927",
+            "websiteURL": "https://www.mcmenamins.com/grand-lodge?utm_source=Google%20Maps&utm_medium=Website%20Button&utm_campaign=Grand%20Lodge",
+            "imageURL": "images/mcmenamins.jpeg",
+            "membershipLevel": "silver"
+        },
+        {
+            "name": "Asian Childrens Mission",
+            "address": "352 S 28th Ave, Cornelius, OR 97113",
+            "phone": "503-844-1029",
+            "websiteURL": "https://asianchildrensmission.org/",
+            "imageURL": "images/asian_children.jpeg",
+            "membershipLevel": "NP"
+        }
+
+    ]
+}

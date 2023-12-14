@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"      content="IE=edge">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta name="description"                content="Nicholas Nelson WDD 230 - Web Frontend Development Chamber Project">
+    <meta name="author"                     content="Nicholas Nelson">
+    <meta property="og:url"                 content="https://nelsn275.github.io/wdd230/chamber/index.html">
+    <meta property="og:type"                content="Website">
+    <meta property="og:title"               content="Nicholas Nelson - WDD 230 - Web Frontend Development">
+    <meta property="og:description"         content="Nicholas Nelson WDD 230 - Web Frontend Development chamber of commerce assignment">
+    <meta property="og:image"               content="images/logos/main-logo.jpeg">
+
+
+    <link rel="stylesheet"      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"      href="styles/base.css">
+    <link rel="stylesheet"      href="styles/medium.css">
+    <link rel="stylesheet"      href="styles/larger.css">
+    <link rel="stylesheet"      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon"   href="images/favicon.ico">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/join-chamber.js" defer></script>
+
+    <title>Cornelius Chamber of Commerce</title>
+    <!-- https://placehold.co/widthxheight -->
+</head>
+<body>
+    <nav>
+            <a href="javascript:void(0);" class="icon" onclick="makeHamburger()">
+                <i class="fa fa-bars"></i>
+              </a>
+            <div id="links">
+              <a href="discover.html">Discover</a>
+              <a href="directory.html">Directory</a>
+              <a class="current" href="join.html">Join</a>
+            </div>
+
+            <div id="big-nav">
+                    <a href="discover.html">Discover</a>
+                    <a href="directory.html">Directory</a>
+                    <a class="current" href="join.html">Join</a>   
+                <a href="index.html"><img id="nav-img" src="images/logos/nav-logo.jpg" alt="Main Logo"></a>
+            </div>
+
+    </nav>
+    <header>
+        <h1>JOIN THE CHAMBER!</h1>
+    </header>
+
+    <main id="join-main">
+        <form>
+            <label>First Name   <input class="input" name="firstName"  type="text" required></label>
+            <label>Last Name    <input class="input" name="lastName"   type="text" required></label>
+            <label>Title        <input class="input" name="title"      type="text" required pattern="[A-Za-z\s\-]{7,}"></label>
+            <label>Email        <input class="input" name="email"      type="email"required placeholder="example@email.com" title="Please enter a valid Email Address"></label>
+            <label>Phone        <input class="input" name="phone"      type= "tel" required></label>
+            <label>Business Name <input class="input" name="business"  type="text" required></label>
+            <div id="levels">
+                <h3>Membership levels</h3>
+                <label><input type="radio" name="level" value="np">NP</label>
+                <label><input type="radio" name="level" value="bronze">Bronze</label>
+                <label><input type="radio" name="level" value="silver">Silver</label>
+                <label><input type="radio" name="level" value="gold">Gold</label>
+            </div>
+            <h3>Business Description</h3>
+            <!-- <input id="input" type="text" cols="40"> -->
+            <label><textarea name="description" id="description" cols="40" rows="5"></textarea></label>
+            <input id="timestamp" type="hidden" name="timestamp" value="">
+            <div id="button-holder">
+                <button id="join">JOIN THE CHAMBER</button>
+            </div>
+        </form>
+
+        <div id="info">
+            <h2>Membership Level Benifits</h2>
+            <h3>NP Membership</h3>
+            <ul>
+                <li>For non profit organizations there is no fee</li>
+            </ul>
+            <h3>Bronze Membership</h3>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+            <h3>Silver Membership</h3>
+            <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+            <h3>Gold Membership</h3>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+            </ul>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Nicholas Nelson | WDD230 Chamber of Commerce Project | Last Modified: <span id="last-modified"> </span></p>
+    </footer>
+
+</body>
+</html>

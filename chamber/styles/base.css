@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
+
+/* Root */
+  
+:root{
+    --text-color: black;
+    --background-color: #b7b7a4;
+    --lighter-background: #a5a591;
+    --hover-background: #464B3F;
+    --hover-text: #ffe8d6;
+    --heading-font: 'Lora';
+    --body-font: 'Open Sans';
+}
+body{
+    background-color: var(--background-color);
+}
+  /* Nav */
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    max-width: 640px;
+}
+  
+nav #links {
+    display: none;
+}
+
+nav a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+nav a.icon {
+    background: black;
+    max-width: 640px;
+}
+
+nav #big-nav{
+    display: none;
+}
+nav #big-nav img{
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+    /* HOME PAGE */
+.current{
+    background-color: grey;
+}
+  
+  /* Main */
+#home-main{
+    background-color: var(--background-color);
+}
+#home-main #dark-mode{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+#home-main #hero-holder{
+    text-align: center;
+    position: relative;
+}
+#hero-holder h1{
+    position: absolute;
+    font-family: var(--heading-font);
+    max-width: 700px;
+    font-size: 30px;
+}
+#home-main #join{
+    color: var(--hover-text);
+    background-color: var(--hover-background);
+    position: absolute;
+    bottom: 10px;
+    right: 41%;
+    width: 100px;
+    height: 3em;
+    border-radius: 8px;
+
+}
+#home-main #banner{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(174, 97, 97);
+    line-height: 2em;
+    font-family: var(--heading-font);
+    margin-top: 0;
+}
+#home-main #current-events, #weather-card, .spotlight{
+    width: 450px;
+    border: 1px solid gray;
+    height: 300px;
+    margin-left: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#home-main .spotlight p{
+    font-family: var(--body-font);
+    font-size: 1.2em;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.gold{
+    background-color: rgb(197, 171, 24);
+    line-height: 2em;
+}
+#home-main #current-events li{
+    font-size: 1.2em;
+    font-family: var(--body-font);
+    margin-bottom: 20px;
+    text-align: left;
+}
+#home-main #temp-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    width: 100%;
+}
+#home-main img{
+    margin-top: 5px;
+    max-width: 100%;
+}
+#home-main #x{
+    margin-left:2em;
+    border: 1px solid black;
+    padding: 1px 5px 1px 5px;
+}
+
+/* Discover Main */
+#discover-main{
+    max-width: 640px;
+    text-align: center;
+}
+#discover-main #welcome-message{
+    font-size: 2em;
+}
+#discover-main img{
+    max-width: 640px;
+}
+#discover-main #dark-mode{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+#discover-main #sidebar{
+    color: var(--text-color);
+}
+#discover-main #sidebar hr{
+    border: 1px solid var(--text-color);
+    border-width: 1px;
+    width: 90%
+}
+#discover-main #sidebar #welcome-message{
+    border: solid black;
+    margin-bottom: 30px;
+}
+#discover-main #sidebar #stats{
+    border: solid black;
+    margin-bottom: 30px;
+}
+#discover-main #sidebar #events{
+    border: solid black;
+    margin-bottom: 30px;
+}
+#discover-main #sidebar li{
+    text-align: left;
+}
+#discover-main #sidebar #calander{
+    border: solid black;
+}
+#discover-main #sidebar #calander img{
+    width: 300px
+}
+/* Join CSS */
+#join-main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+header h1{
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+form{
+    text-align: left;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 2em;
+    margin-left: 3em;
+}
+.input{
+    display: block;
+    padding:.5rem;
+    font-size: 1.1rem;
+    width: 20rem;
+}
+#description{
+    height: 4em;
+    margin-left: 1em;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+#join-main #button-holder{
+    text-align: center;
+}
+label{
+    display: block;
+    margin: .5rem;
+    margin-left: 2em;
+    margin-top: 1.5em
+}
+button{
+    font-size: 1.5rem;
+    color: white;
+    background-color: darkblue;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+input:valid{
+    box-shadow: 3px 3px 3px black;
+}
+input:invalid{
+    box-shadow: 3px 3px 3px red;
+}
+#info{
+    border: 1px solid black;
+    border-radius: 2em;
+    margin: 20px;
+}
+#info ul, h3{
+    margin-left: 2em;
+}
+#info h2{
+    text-align: center;
+}
+/* Thank-You CSS */
+#thank-you-main{
+    text-align: center;
+
+}
+/* Directory */
+.directory-main{
+    width: 100%;
+}
+
+#directory-selector{
+    width: 100%;
+    text-align: center;
+}
+
+#directory-selector button{
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    border: 1px black solid;
+}
+
+#directory-selector button.active{
+    background-color: var(--hover-background);
+}
+
+.directory-cards img{
+    width: 300px;
+}
+.directory-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+}
+
+.directory-cards section{
+    text-align: center;    
+    border: 2px solid grey;    
+    width: 300px;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.directory-cards section{
+    box-shadow: .5rem .5rem .5rem var(--hover-background);
+}
+
+
+.directory-cards .gold-member{
+    box-shadow: .5rem .5rem .5rem rgb(197, 171, 24);
+}
+
+.directory-cards .card-button{
+    text-decoration: none;
+    color: white;
+    background-color: var(--hover-background);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.directory-list{    
+    display: grid;    
+    justify-items: center;   
+    padding: 1rem;    
+}
+
+.directory-list section img{
+    display: none;
+}
+
+.directory-list section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.directory-list .card-button{
+    text-decoration: underline;
+    color: black;    
+}
+
+.directory-list section:first-child{
+    border-radius: 10px 10px 0 0;
+}
+.directory-list section:last-child{
+    border-radius: 0 0 10px 10px;
+}
+.directory-list section:nth-child(odd) {
+    background-color: var(--lighter-background);
+}
+
+.directory-list section:nth-child(even) {
+    background-color: var(--hover-background);
+    color: rgb(193, 193, 193);
+}
+.directory-list section:nth-child(even) a{
+    color: rgb(193, 193, 193);
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    border: 1px solid black
+}
